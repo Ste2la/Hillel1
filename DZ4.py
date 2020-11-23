@@ -1,60 +1,60 @@
 # # есть список my_list с значениями типа int.Распечатать те значения, которые больше 100.Задание выполнить с помощью цикла for
-# my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
-# for n in my_list:
-#     if n > 100:
-#         print(n)
+my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
+for n in my_list:
+    if n > 100:
+        print(n)
 
 # #У вас есть список my_list с значениями типа int, и пустой список my_results.Добавить в my_results те значения, которые больше 100.
 # #Распечатать список my_results.Задание выполнить с помощью цикла for.
-# my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
-# my_results = []
-# for n in my_list:
-#     if n > 100:
-#         my_results.append(n)
-# print(my_results)
+my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
+my_results = []
+for n in my_list:
+    if n > 100:
+        my_results.append(n)
+print(my_results)
 
 
 # У вас есть список my_list с значениями типа int.Если в my_list количество элементов меньше 2, то в конец добавить значение 0.
 #Если количество элементов больше или равно 2, то добавить сумму последних двух элементов.
 #Количество элементов в списке можно получить с помощью функции len(my_list)
-# my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
-# if len(my_list) < 2:
-#     my_list.append(0)
-# else:
-#     my_list.append(my_list[-1]+my_list[-2])
-# print(my_list)
+my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
+if len(my_list) < 2:
+    my_list.append(0)
+else:
+    my_list.append(my_list[-1]+my_list[-2])
+print(my_list)
 
 
 # #Пользователь вводит value - число с запятой (например 3.14) с клавиатуры.Вы приводите это value к типу float и выводите результат выражения value ** -1.
 # # Написать программу, которая вычисляет данное выражение и корректно обрабатывает возможные исключения.
-# try:
-#     value = float(input())
-#     print(value**(-1))
-# except ValueError:
-#     print('could not convert string to float')
-# except (ZeroDivisionError):
-#     print('Division by zero')
+try:
+    value = float(input())
+    print(value**(-1))
+except ValueError:
+    print('could not convert string to float')
+except (ZeroDivisionError):
+    print('Division by zero')
 
 # У вас есть список значений my_list и список индексов my_indexes
 # (начинается с нуля и количество элементов совпадает с количеством в my_list.
 # Распечатать значения из my_list через обращение по индексу.
-# my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
-# my_indexes = [0, 1, 2, 3, 4, 5, 6, 7]
-# for n in my_indexes:
-#     print(my_list[n])
+my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
+my_indexes = [0, 1, 2, 3, 4, 5, 6, 7]
+for n in my_indexes:
+    print(my_list[n])
 
 #У вас есть два списка my_list_1 и my_list_2 равной длинны и список индексов my_indexes (начинается с нуля и количество элементов
 #совпадает с количеством в my_list_1.
 #Распечатать пары значений из my_list_1 и my_list_2 через обращение по индексу.
-# my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
-# my_list_2 = [2, 4, 10, 20, 200, 400, 2000, 4000]
-# my_indexes = [0, 1, 2, 3, 4, 5, 6, 7]
-# for n in my_indexes:
-#     print((my_list[n], my_list_2[n]))
+my_list = [1, 3, 10, 30, 100, 300, 1000, 3000]
+my_list_2 = [2, 4, 10, 20, 200, 400, 2000, 4000]
+my_indexes = [0, 1, 2, 3, 4, 5, 6, 7]
+for n in my_indexes:
+    print((my_list[n], my_list_2[n]))
 
-# У вас есть строка my_string = '0123456789'.
-# Сгенерировать целые числа (тип int) от 0 до 99 и поместить их в список.
-# Задание нужно выполнить ТОЛЬКО через цикл в цикле(См. пример выше) и приведение типов .
+# # У вас есть строка my_string = '0123456789'.
+# # Сгенерировать целые числа (тип int) от 0 до 99 и поместить их в список.
+# # Задание нужно выполнить ТОЛЬКО через цикл в цикле(См. пример выше) и приведение типов .
 
 itog = []
 my_string = '0123456789'
