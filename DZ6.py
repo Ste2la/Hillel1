@@ -5,14 +5,14 @@
 # Если на четном - оставить без изменения.
 # Задание сделать с использованием enumerate.
 
-# my_list = ['qw', "er", "ty", "ui"]
-# my_list_2 = []
-# for index, value in enumerate(my_list):
-#     if index % 2:
-#         my_list_2.append(value)
-#     else:
-#         my_list_2.append(value[::-1])
-# print(my_list_2)
+my_list = ['qw', "er", "ty", "ui"]
+my_list_2 = []
+for index, value in enumerate(my_list):
+    if index % 2:
+        my_list_2.append(value)
+    else:
+        my_list_2.append(value[::-1])
+print(my_list_2)
 
 
 
