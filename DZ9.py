@@ -109,14 +109,9 @@ def get_list():
     return rez_list
 
 
-# get_list()
-# print(get_list())
-
-
 # Написать функцию generate_and_write_file которая принимает один параметр - имя файла(вместе с путем).
 # В зависимости от расширения файла (txt, csv, json) сгенерировать данные для записи и записать в данный файл.
 # Если расширение не соответствует заданным, то вывести текст "Unsupported file format"
-print('begin')
 
 
 def generate_and_write_file(filename: str):
@@ -127,7 +122,6 @@ def generate_and_write_file(filename: str):
             file.write(gen_string())
     elif filename.lower().endswith('.csv'):
         result = get_list()
-        print(result)
         with open(filename, 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(result)
