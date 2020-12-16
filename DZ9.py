@@ -31,7 +31,7 @@ def gen_word():
         return word_str
 
 
-print(gen_word())
+# print(gen_word())
 
 
 def gen_string():
@@ -48,7 +48,7 @@ def gen_string():
     return " ".join(word_list)
 
 
-print(gen_string())
+# print(gen_string())
 
 # Функция 2. Создает данные для записи в файл json.
 # Создает и возвращает словарь со случайным количеством ключей (не менее 5 но не более 20 ключей).
@@ -88,8 +88,8 @@ def get_dict():
     return res_dict
 
 
-get_dict()
-print(get_dict())
+# get_dict()
+# print(get_dict())
 
 
 # Функция 3. Создает данные для записи в файл csv.
