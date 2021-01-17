@@ -28,15 +28,21 @@ import random
 
 
 class EmailGenerator:
+
     def __init__(self, domain_path, name_path):
         self._domain_path = domain_path
         self._name_path = name_path
 
-        file = open(self._domain_path, 'r')
-        self.domains = [line.strip('.\n') for line in file.readlines()]
+        self.domains = self.get_domains()
+        self.names = self.get_names()
 
+    def get_names(self):
         file = open(self._name_path, 'r')
-        self.names = [line.split('\t')[1] for line in file.readlines()]
+        return [line.split('\t')[1] for line in file.readlines()]
+
+    def get_domains(self):
+        file = open(self._domain_path, 'r')
+        return [line.strip('.\n') for line in file.readlines()]
 
     def __repr__(self):
         return f'len domains = {len(self.domains)}, len names = {len(self.names)}'
